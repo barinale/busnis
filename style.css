@@ -1,0 +1,216 @@
+*{padding:0;margin:0;font-family: sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{height: 2000px;}
+:root{--main-color:#0C74C3;
+--secound-color:#02B9D9;
+--font-color:black;
+}
+.content{
+      width:90%;
+      margin:auto;
+}
+#header{background: url(business-team.jpg) no-repeat ;
+        background-size: calc(100%*1.2);
+        min-height:600px;
+        max-height: 700px;
+        position: relative;
+        }
+#header:before{
+        content:"";
+        position: absolute;
+        left:0;
+        right:0;
+        background:linear-gradient(0.25turn, rgba(255,241,255,1),rgba(255,255,255,0.9) ,rgba(255,250,255,0.0) );
+        height:100%;
+        width:50%;
+
+}
+#header header{
+        display: flex;
+        min-height: 60px;
+        padding-top:  10px;
+        align-items: center;
+}
+#header header .logo{
+        flex-grow: 3;
+}
+#header header .logo strong{
+        text-transform: uppercase;
+        position: relative;
+        font-size:2em;
+}
+#header header .logo strong::after{
+        content: "";
+        position: absolute;
+        right:0;
+        bottom: 5px;
+        height:5px;
+        width:5px;
+        border-radius: 50%;
+        background: var(--main-color);
+}
+#header header nav{
+      flex-grow: 2;
+      z-index: 0;
+}
+#header header nav ul{
+    display:flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    height:40px;
+    align-items: center;
+}
+#header header nav ul li{
+  height:30px;
+  width: 90px;
+}
+#header header nav ul li:last-child{
+      flex-grow: 2;
+      width:100px;
+      text-align: center;
+}
+#header header nav ul li:last-child a{
+  background:var(--main-color);
+  border-radius: 5px;
+  height: 60px;
+  color:white;
+  padding:10px 10px;
+}
+
+#header header nav ul li a{
+      color:var(--font-color);
+      padding:8px 0;
+}
+#header header nav ul li #active{
+  border-bottom: 1px solid var(--main-color);
+}
+
+#header #headermain article div{
+  position: absolute;
+  top:300px;
+  left:150px;
+  width: 40%;
+}
+#header #headermain article h1{
+  font-size: 2em;
+  color:var(--font-color);
+  border-left:3px solid var(--main-color);
+  padding:0px 10px;
+  margin: 30px 0px;
+}
+#header #headermain article p{
+      margin:10px 0px;
+}
+#header #headermain article button{
+  border: 0px;
+  border-radius: 10px;
+  width:100px;
+  height:40px;
+  color:white;
+  padding:10px;
+  background:var(--main-color);
+}
+/*FIN headersection -----------------------*/
+/*secound section----------------------*/
+#secoundslider{
+  min-height: 400px;
+}
+#secoundslider header{
+    text-align: center;
+    min-height: 90px;
+    overflow: hidden;
+
+}
+#secoundslider header h6{
+  color:var(--main-color);
+  margin-top: 20px;
+}
+#secoundslider header h2{
+  height:40px;
+  position: relative;
+}
+#secoundslider header h2::after{
+    content: "";
+    position: absolute;
+    width:70px;
+    left:50%;
+    bottom: 0%;
+    transform: translate(-50%,0);
+    border:1px solid var(--main-color);
+}
+#secoundslider .item{
+    display: flex;
+    justify-content: space-between;
+}
+#secoundslider .item .items{
+    width:23%;
+}
+#secoundslider .item .items .icon{
+  width:50px;
+  height:50px;
+  background:var(--main-color);
+  margin: 15px 0px;
+}
+#secoundslider .item .items h3{
+    margin:10px 0px;
+}
+#secoundslider .item .items p{
+    margin: 10px 0px;
+}
+/*Fin secound slider*/
+/*intr------*/
+#intr{
+  width:100%;
+  height:600px;
+  overflow: hidden;
+  background-color: rgba(168,188,207,0.2);
+  padding:10px 10px;
+  box-sizing: border-box;
+}
+#intr .box{
+  display: flex;
+  height:400px;
+  margin-top: 10%;
+  margin-left: 10%;
+  justify-content: space-between;
+  width:80%;
+
+  background:rgba(2,185,217,0.2);
+
+}
+#intr .box > div{
+    width:900px;
+
+}
+#intr .box .img{
+
+  position: relative;
+  overflow: hidden;
+  left:-5%;
+  top:-10%;
+
+}
+#intr .box .img img{
+  position:absolute;
+  left:-300px;
+  top:0;
+}
+#intr .box .artcle{
+  padding-top:60px;
+}
+#intr .box .artcle *{
+    margin-top: 10px;
+}
+#intr .box .artcle div{
+    border-left:2px solid var(--secound-color);
+    padding-left:15px;
+}
+#intr .box .artcle div h1{
+      font-weight: 400;
+}
+#intr .box .artcle p{
+    line-height: 25px;
+    font-weight: 100;
+}
+/* FIN intr------*/
