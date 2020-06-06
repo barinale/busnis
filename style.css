@@ -1,11 +1,12 @@
 *{padding:0;margin:0;font-family: sans-serif;}
 ul{list-style: none;}
 a{text-decoration: none;}
-body{height: 3000px;}
+body{height: 4000px;}
 :root{--main-color:#0C74C3;
 --secound-color:#02B9D9;
 --font-color:black;
 }
+input{display:none;}
 .content{
       width:90%;
       margin:auto;
@@ -309,27 +310,67 @@ margin-top:30px;
 
 /* fin numbers*/
 /* our Team*/
-#member{
+#memeber{
   min-height: 400px;
 }
-#member .header{
+#memeber article .header{
   margin-top:30px;
   text-align: center;
 
 }
-#member .header h6{
+#memeber article .header h6{
   color:var(--secound-color);
   margin: 10px 0px;
   font-weight: 400;
 }
-#member .header h1{
+#memeber article .header h1{
     margin:20px 0;
     font-size: 2rem;
 }
-#member .header hr{
+#memeber article .header hr{
     width:10%;
     margin: auto;
     color:var(--secound-color);
 }
+#memeber article .main {
+  overflow: hidden;
+  margin-top:30px;
+  width:90%;
+  margin: auto;
+  text-align: center;
+}
+
+#memeber article .main .items{
+    display: flex;
+    width:calc(100%*2);
+    position: relative;
+    transition: all 1.5s;
+}
+#memeber article .main .items .item{
+    width:400px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#memeber article .main .items .item .block{
+  height:150px;
+  width:150px;
+  background: var(--main-color);
+  margin: 10px auto;
+}
+#memeber article .main .items .item .block2 *{
+    margin-top:10px;
+}
+
+#memeber article .main label{
+    height:20px;
+    width:20px;
+    background:#A1B5BF;
+    border-radius: 50%;
+    display: inline-block;
+}
+#memeber article .main #for1:checked ~ .items{left:-100%;transition:all 2s;}
+#memeber article .main #for1:checked ~ label[for="for1"]{background:var(--main-color);}
+#memeber article .main #for2:checked ~ .items{left:0;transition: all 2s;}
+#memeber article .main #for2:checked ~ label[for="for2"]{background:var(--main-color);}
 
 /*Fin our tteams*/
