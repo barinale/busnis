@@ -307,6 +307,29 @@ margin-top:30px;
   margin: auto;
 }
 
-
-
 /* fin numbers*/
+/* our Team*/
+#member{
+  min-height: 400px;
+}
+#member .header{
+  margin-top:30px;
+  text-align: center;
+
+}
+#member .header h6{
+  color:var(--secound-color);
+  margin: 10px 0px;
+  font-weight: 400;
+}
+#member .header h1{
+    margin:20px 0;
+    font-size: 2rem;
+}
+#member .header hr{
+    width:10%;
+    margin: auto;
+    color:var(--secound-color);
+}
+
+/*Fin our tteams*/
