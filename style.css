@@ -410,7 +410,101 @@ margin-top:30px;
       border-radius: 10px;
       color:white;
 }
-
-
-
 /* FIN  EXPERT ADVICE*/
+/*plan offer*/
+#plan{
+    margin-top:30px;
+
+}
+#plan article{
+  display: flex;
+}
+#plan article .box ,#plan article .box2 {
+width:50%;
+box-sizing: border-box;
+}
+#plan article .box{
+  padding:35px;
+}
+#plan article .box .header{
+    margin:10px 0;
+}
+#plan article .box .header h6{
+  color:var(--secound-color);
+  margin: 10px 0px;
+  font-weight: 400;
+}
+#plan article .box .header h1{
+    margin:10px 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+#plan article .box .header hr{
+    width:30%;
+    color:var(--secound-color);
+}
+#plan article .box .buttonss{
+    margin:15px 0;
+    border:1px solid var(--secound-color);
+    border-collapse: collapse;
+    width:205px;
+}
+#plan article .box .buttonss a{
+    display: inline-block;
+    height:35px;
+    width:100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 8px 0;
+    border-radius: 3px;
+}
+#plan article .box .buttonss a:first-child{
+    background:var(--secound-color);
+    border-radius: 3px;
+    color:white;
+}
+#plan article .box .buttonss a:last-child{
+    color:var(--secound-color)
+}
+#plan article .box2 {
+    display: flex;
+      padding:35px;
+}
+#plan article .box2 div{
+  width:50%;
+  box-sizing: border-box;
+  display: inline-block;
+  margin:10px 20px;
+  padding:10px;
+  border: 0.6px solid var(--secound-color);
+}
+#plan article .box2 div h3{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+#plan article .box2 div h1{
+    font-size: 2rem;
+    font-weight: 2rem;
+      margin-top: 5px;
+}
+#plan article .box2 div hr{
+    margin-top: 5px;
+    width:80%;
+    color:var(--secound-color);
+}
+#plan article .box2 div p{
+    margin-top: 5px;
+    font-weight: 200;
+
+}
+#plan article .box2 div a{
+  color:var(--secound-color);
+  margin-top: 20px;
+  display: inline-block;
+}
+#plan article .box2 div a:after{
+  content: '\203A \203A \203A';
+  margin-left: 7px;
+}
+/*FIN plan offer*/
