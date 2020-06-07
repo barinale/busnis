@@ -1,7 +1,7 @@
 *{padding:0;margin:0;font-family: sans-serif;}
 ul{list-style: none;}
 a{text-decoration: none;}
-body{height: 4000px;}
+body{height: 4900px;}
 :root{--main-color:#0C74C3;
 --secound-color:#02B9D9;
 --font-color:black;
@@ -413,98 +413,249 @@ margin-top:30px;
 /* FIN  EXPERT ADVICE*/
 /*plan offer*/
 #plan{
-    margin-top:30px;
+      margin-top:30px;
 
 }
 #plan article{
-  display: flex;
+      display: flex;
 }
 #plan article .box ,#plan article .box2 {
-width:50%;
-box-sizing: border-box;
+      width:50%;
+      box-sizing: border-box;
 }
 #plan article .box{
-  padding:35px;
-}
-#plan article .box .header{
-    margin:10px 0;
-}
-#plan article .box .header h6{
-  color:var(--secound-color);
-  margin: 10px 0px;
-  font-weight: 400;
-}
-#plan article .box .header h1{
-    margin:10px 0;
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-#plan article .box .header hr{
-    width:30%;
-    color:var(--secound-color);
-}
-#plan article .box .buttonss{
-    margin:15px 0;
-    border:1px solid var(--secound-color);
-    border-collapse: collapse;
-    width:205px;
-}
-#plan article .box .buttonss a{
-    display: inline-block;
-    height:35px;
-    width:100px;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 8px 0;
-    border-radius: 3px;
-}
-#plan article .box .buttonss a:first-child{
-    background:var(--secound-color);
-    border-radius: 3px;
-    color:white;
-}
-#plan article .box .buttonss a:last-child{
-    color:var(--secound-color)
-}
-#plan article .box2 {
-    display: flex;
       padding:35px;
 }
+#plan article .box .header{
+      margin:10px 0;
+}
+#plan article .box .header h6{
+      color:var(--secound-color);
+      margin: 10px 0px;
+      font-weight: 400;
+}
+#plan article .box .header h1{
+        margin:10px 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+}
+#plan article .box .header hr{
+        width:30%;
+        color:var(--secound-color);
+}
+#plan article .box .buttonss{
+        margin:15px 0;
+        border:1px solid var(--secound-color);
+        border-collapse: collapse;
+        width:205px;
+}
+#plan article .box .buttonss a{
+        display: inline-block;
+        height:35px;
+        width:100px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 8px 0;
+        border-radius: 3px;
+}
+#plan article .box .buttonss a:first-child{
+        background:var(--secound-color);
+        border-radius: 3px;
+        color:white;
+}
+#plan article .box .buttonss a:last-child{
+        color:var(--secound-color);
+}
+#plan article .box2 {
+        display: flex;
+          padding:35px;
+}
 #plan article .box2 div{
-  width:50%;
-  box-sizing: border-box;
-  display: inline-block;
-  margin:10px 20px;
-  padding:10px;
-  border: 0.6px solid var(--secound-color);
+        width:50%;
+        box-sizing: border-box;
+        display: inline-block;
+        margin:10px 20px;
+        padding:10px;
+        border: 0.6px solid var(--secound-color);
+        border-top: none;
+}
+#plan article .box2 div aside{
+        height:100px;
+        position: relative;
 }
 #plan article .box2 div h3{
-  font-size: 1rem;
-  font-weight: 400;
-  margin-top: 10px;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 10px;
+        text-transform: uppercase;
 }
 #plan article .box2 div h1{
-    font-size: 2rem;
-    font-weight: 2rem;
-      margin-top: 5px;
+        font-size: 2rem;
+        font-weight: 2rem;
+          margin-top: 5px;
 }
 #plan article .box2 div hr{
-    margin-top: 5px;
-    width:80%;
-    color:var(--secound-color);
+
+        width:80%;
+        color:var(--secound-color);
+        position: absolute;
+        bottom: 6%;
 }
 #plan article .box2 div p{
-    margin-top: 5px;
-    font-weight: 200;
+        margin-top: 5px;
+        font-weight: 200;
 
 }
 #plan article .box2 div a{
-  color:var(--secound-color);
-  margin-top: 20px;
-  display: inline-block;
+        color:var(--secound-color);
+        margin-top: 20px;
+        display: inline-block;
 }
 #plan article .box2 div a:after{
-  content: '\203A \203A \203A';
-  margin-left: 7px;
+        content: '\203A \203A \203A';
+        margin-left: 7px;
 }
 /*FIN plan offer*/
+/*logo*/
+#logos{
+          height: 150px;
+          margin-top: 15px;
+          overflow: hidden;
+
+}
+#logos .items{
+          display:flex;
+          justify-content: space-around;
+          margin-top:calc(150px/2);
+          transform: translateY(-50%);
+}
+#logos .items .item{
+          border: 1px solid black;
+          text-align: center;
+          padding:calc(60px/4);
+          height:60px;
+}
+#logos .items .item h3{
+        margin-top: 10px;
+        font-size: 1rem;
+        font-weight:600;
+}
+
+/*FIN logo*/
+/*Customs*/
+#costum{
+        height:600px;
+        margin-top: 30px;
+}
+#costum article .header{
+        margin: 10px auto;
+        text-align: center;
+}
+#costum article .header h6{
+        color:var(--secound-color);
+        margin: 10px 0px;
+        font-weight: 400;
+}
+#costum article .header h1{
+        margin:10px 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+}
+#costum article .header hr{
+        width:30%;
+        color:var(--secound-color);
+        margin: auto;
+}
+#costum article .box1{
+        width:100%;
+}
+#costum article .box1 .image{
+        height:100px;
+        display: flex;
+        width: 100%;
+        position: relative;
+}
+#costum article .box1 .image span:nth-child(1){
+        height:1px;
+        width:40%;
+        border-bottom: 1px solid black;
+        display: inline-block;
+        position: absolute;
+        top:49px;
+}
+#costum article .box1 .image .cirle{
+        height:100px;
+        width:100px;
+        border-radius: 50%;
+        border: 1px solid black;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+}
+
+#costum article .box1 .image span:nth-child(3){
+        height:1px;
+        width:40%;
+        border-bottom: 1px solid black;
+        display: inline-block;
+        position: absolute;
+        top:49px;
+        right:0;
+}
+#costum article .box1 .Text{
+        text-align: center;
+        width:60%;
+        margin:20px auto;
+}
+#costum article .box1 .Text p{
+        font-weight: 400;
+        line-height: 30px;
+}
+#costum article .box1 .box11{
+height:100px;
+width:906px;
+
+display: flex;
+position:relative;
+margin: auto;
+}
+#costum article .box1 .box11 span:nth-child(1){
+      height:1px;
+      border-bottom: 1px solid black;
+      width:418px;
+      display: inline-block;
+      position: absolute;
+      top:49px;
+      left:0px;
+}
+#costum article .box1 .box11 .traingle{
+      width:50px;
+      height:50px;
+      border: 1px solid black;
+      border-width: 0px 0px 1px 1px;
+
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%) rotate(-45deg);
+}
+#costum article .box1 .box11 span:nth-child(3){
+      height:1px;
+      border-bottom: 1px solid black;
+      width:418px;
+      display: inline-block;
+      position: absolute;
+      top:49px;
+      right:0px;
+}
+#costum article .box1 .footer {
+      text-align: center;
+}
+#costum article .box1 .footer h4{
+    font-weight: 400;
+}
+#costum article .box1 .footer strong{
+  font-weight: 700;
+}
+/*FIN   Customs*/
