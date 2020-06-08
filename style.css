@@ -719,7 +719,7 @@ width:50%;
 #promovideo article{
     display:flex;
     margin:30px auto;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #promovideo article * {
   width:500px;
