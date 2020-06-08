@@ -6,7 +6,7 @@ body{height: 4900px;}
 --secound-color:#02B9D9;
 --font-color:black;
 }
-input{display:none;}
+input[type="chackbox"]{display:none;}
 .content{
       width:90%;
       margin:auto;
@@ -544,7 +544,7 @@ margin-top:30px;
 /*FIN logo*/
 /*Customs*/
 #costum{
-        height:600px;
+        height:500px;
         margin-top: 30px;
 }
 #costum article .header{
@@ -659,3 +659,109 @@ margin: auto;
   font-weight: 700;
 }
 /*FIN   Customs*/
+/*Message*/
+#message{
+    height:100px;
+    overflow: auto;
+      }
+#message article{
+      display: flex;
+      justify-content:space-around;
+      margin-top: 25px;
+      align-items: center;
+      }
+#message .message1{
+display: flex;
+justify-content: center;
+width:50%;
+      }
+#message .message1 .icon{
+      text-align: center;
+      margin-right: 10px;
+      }
+#message .message1 .icon i{
+      font-size: 3rem;
+      color:var(--main-color);
+        }
+#message .message1 .text{
+    padding: 5px;
+}
+#message .message1 .text h6{
+    font-weight: 400;
+}
+#message .inputm{
+    background:var(--main-color);
+    height:30px;
+}
+#message .inputm button{
+    width:100px;
+    height: 30px;
+    background: var(--main-color);
+    color:white;
+    border:none;
+    margin: 0;
+    padding: 0;
+}
+#message .inputm input{
+    outline: 1px solid var(--main-color);
+    border: none;
+    height:28px;
+    width:200px;
+    margin: 0px;
+    padding: 0;
+}
+/*FIN Message*/
+/*promo video*/
+#promovideo{
+  height:350px;
+  overflow: hidden;
+}
+#promovideo article{
+    display:flex;
+    margin:30px auto;
+    justify-content: space-between;
+}
+#promovideo article * {
+  width:500px;
+
+}
+#promovideo article .video{
+
+}
+#promovideo article .video iframe{
+    width:100%;
+
+    border-radius: 10px;
+}
+#promovideo article .text{
+    box-sizing: border-box;
+  margin-left: 0px;
+    padding:30px;
+}
+#promovideo article .text *{
+  margin-top: 10px;
+}
+#promovideo article .text h1{
+  font-size: 1.5rem;
+
+}
+#promovideo article .text p{
+  line-height: 20px;
+  font-weight: 100;
+}
+#promovideo article .text a{
+  background:var(--main-color);
+  color:white;
+  display: inline-block;
+  height:40px;
+  width:150px;
+  border-radius: 10px;
+  font-size:1.3rem;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+/*FIN promo video*/
