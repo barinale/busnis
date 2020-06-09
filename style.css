@@ -1,12 +1,12 @@
 *{padding:0;margin:0;font-family: sans-serif;}
 ul{list-style: none;}
 a{text-decoration: none;}
-body{height: 4900px;}
+body{height: 5900px;}
 :root{--main-color:#0C74C3;
 --secound-color:#02B9D9;
 --font-color:black;
 }
-input[type="chackbox"]{display:none;}
+input[type="radio"]{display:none;}
 .content{
       width:90%;
       margin:auto;
@@ -881,3 +881,80 @@ width:50%;
 
 }
 /*FIN   work */
+/*request panel*/
+#request{
+      overflow: hidden;
+      margin-top:20px;
+
+}
+#request article{
+      display:flex;
+}
+#request article > div{
+      width:500px;
+}
+#request article .locale{
+        width:70%;
+}
+#request article .locale div{
+      width:80%;
+      height:70%;
+      overflow: hidden;
+      margin-top:40px;
+      margin-left: 40px;
+}
+#request article .locale div img{
+        width:100%;
+        height:110%;
+}
+.request .header *{
+    margin-top:10px;
+}
+.request .header h6{
+        color:var(--secound-color);
+}
+.request .header h1{
+      font-size:1.5rem;
+}
+.request .header hr{
+    width:20%;
+    color:var(--main-color);
+}
+#request .request .form{
+  margin-top: 10px;
+
+}
+
+#request .request .form form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#request .request .form form input {
+    width:45%;
+    height:40px;
+    margin:10px 0px;
+    padding:10px;
+    box-sizing: border-box;
+    border: 1px solid var(--secound-color);
+}
+#request .request .form form input[placeholder="Subject"]{
+  flex: 2 0 85%;
+}
+
+#request .request .form textarea{
+  height:100px;
+  padding:10px;
+  border: 1px solid var(--secound-color);
+}
+#request .request .form button{
+    height:50px;
+    width:160px;
+    background:var(--main-color);
+    border:none;
+    color:white;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    margin-top:15px;
+}
+/*FIN request panel*/
