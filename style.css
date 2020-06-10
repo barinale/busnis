@@ -983,14 +983,16 @@ width:50%;
 }
 #news article  .box {
   width:750px;
-  background:red;
   margin: auto;
+  text-align: center;
+  overflow: hidden
 }
 #news article  .box .items{
   position: relative;
     display: flex;
     width:1500px;
     justify-content: space-around;
+    text-align: left;
     }
 #news article .box .items .item{
     width:200px;
@@ -1030,3 +1032,9 @@ width:50%;
     content:"\203A \203A ";
     margin-left:8px;
 }
+#news article .box label{display: inline-block; height:20px;width:20px;background:#A1B5BF;
+                            border-radius: 50%;margin-top:15px;}
+#news article .box input[id="ftne"]:checked ~ .items{left:-100%;transition: left 1s;}
+#news article .box input[id="fone"]:checked ~  label[for="fone"]{background:var(--secound-color);}
+#news article .box input[id="fone"]:checked ~ .items{left:0%;transition: left 1s;}
+#news article .box input[id="ftne"]:checked ~  label[for="ftne"]{background:var(--secound-color);}
