@@ -958,8 +958,9 @@ width:50%;
     margin-top:15px;
 }
 /*FIN request panel*/
+/*news*/
 #news{
-  min-height:600px;
+  min-height:500px;
   overflow: hidden;
 }
 #news article .header{
@@ -1038,3 +1039,83 @@ width:50%;
 #news article .box input[id="fone"]:checked ~  label[for="fone"]{background:var(--secound-color);}
 #news article .box input[id="fone"]:checked ~ .items{left:0%;transition: left 1s;}
 #news article .box input[id="ftne"]:checked ~  label[for="ftne"]{background:var(--secound-color);}
+/*FIN news*/
+/*footer*/
+footer{
+  background:#001144;
+  color:white;
+  overflow: hidden;
+}
+footer .items{
+    display: flex;
+    justify-content:space-around;
+    margin-top:20px;
+}
+footer .items .item{
+    width:300px;
+    padding:20px;
+
+}
+footer .items .item h2{
+  margin:15px 0;
+}
+footer .items .item:nth-child(1) p {
+    line-height: 20px;
+    margin: 10px 0;
+    font-weight: 600
+}
+footer .items .item:nth-child(1) a{
+  color:var(--secound-color);
+  text-transform: uppercase;
+}
+footer .items .item:nth-child(2) a{
+  display: inline-block;
+  width:115px;
+  color:white;
+  font-weight: 600;
+  margin-top:20px;
+}
+footer .items .item:nth-child(2) a:nth-child(odd){
+    margin-left: 20px;
+}
+footer .items .item:nth-child(2) a:before{
+  content:"\203A \203A           ";
+
+}
+footer .items .item:nth-child(3) .box {
+      box-sizing: content-box;
+      margin-top:15px;
+      width:250px;
+}
+footer .items .item:nth-child(3) .box .block{
+    height:50px;
+    width:50px;
+    background:white;
+    float:left;
+    margin: 0 10px 0 5px;
+}
+footer .items .item:nth-child(3) .box h4{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+footer .items .item:nth-child(3) .box p{
+    font-size:0.7rem;
+}
+footer .footer div{
+  margin-bottom: 10px;
+}
+footer .footer div:nth-child(1){
+  float: left;
+}
+footer .footer div:nth-child(2){
+    float:right;
+}
+footer .footer div:nth-child(2) a {
+  color:white;
+  margin-left: 10px;
+}
+footer .footer div:nth-child(1) a {
+    color:var(--main-color);
+    margin-left:10px;
+}
+/*FIN footer*/
