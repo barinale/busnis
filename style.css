@@ -880,11 +880,13 @@ width:50%;
 #request article{
       display:flex;
 }
-#request article > div{
-      width:500px;
+#request article div{
+      width:50%;
+
 }
 #request article .locale{
-        width:70%;
+
+
 }
 #request article .locale div{
       width:80%;
@@ -921,21 +923,29 @@ width:50%;
   justify-content: space-between;
 }
 #request .request .form form input {
-    width:45%;
     height:40px;
+    width: 100%;
     margin:10px 0px;
     padding:10px;
     box-sizing: border-box;
     border: 1px solid var(--secound-color);
+
 }
+#request .request .form form input[placeholder="Name"],
+#request .request .form form input[placeholder="Email"]{
+  width:49%;
+}
+
 #request .request .form form input[placeholder="Subject"]{
   flex: 2 0 85%;
+
 }
 
 #request .request .form textarea{
-  height:100px;
+  height:80px;
   padding:10px;
   border: 1px solid var(--secound-color);
+  width:100%;
 }
 #request .request .form button{
     height:50px;
