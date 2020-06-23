@@ -38,7 +38,7 @@ section:nth-child(odd){
 
 /*FIn tag for all section*/
 #header{background: url(business-team.jpg) no-repeat ;
-        background-size: calc(100%*1.2);
+        background-size: calc(100%*1.3);
         min-height:600px;
         max-height: 700px;
         position: relative;
@@ -195,7 +195,7 @@ section:nth-child(odd){
 /*intr------*/
 #intr{
   width:100%;
-  height:600px;
+  min-height:600px;
   overflow: hidden;
   background-color: ;
   padding:10px 10px;
@@ -252,6 +252,7 @@ section:nth-child(odd){
     padding:0.5em 1.5em;
     background:white;
     color:var(--secound-color);
+    display: inline-block;
 }
 /* FIN intr------*/
 /**oofer awesome**/
@@ -390,10 +391,10 @@ margin-top:30px;
     border-radius: 50%;
     display: inline-block;
 }
-
-#memeber article .main #for1:checked ~ .items{left:-100%;transition:all 2s;}
+#memeber article .main label:last-child{display: none;}
+#memeber article .main #for1:checked ~ .items{left:0%;transition:all 2s;}
 #memeber article .main #for1:checked ~ label[for="for1"]{background:var(--secound-color);}
-#memeber article .main #for2:checked ~ .items{left:0;transition: all 2s;}
+#memeber article .main #for2:checked ~ .items{left:-100%;transition: all 2s;}
 #memeber article .main #for2:checked ~ label[for="for2"]{background:var(--secound-color);}
 
 #memeber article .main .items .item .block2 a{
@@ -789,7 +790,17 @@ width:50%;
     width:100%;
     height:190px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
 
+}
+#work article .explain .box div .icon{
+  border-radius: 50%;
+  border:1px dashed var(--secound-color);
+  margin-bottom: 10px;
+  z-index: 2;
 }
 #work article .explain .box i{
     font-size: 5rem;
@@ -802,6 +813,8 @@ width:50%;
     padding-top:40px;
     box-sizing: border-box;
     margin-top:10px;
+    z-index: 5;
+
 }
 #work article .explain .box span{
   width:100%;
@@ -809,67 +822,19 @@ width:50%;
   top:50%;
   border-bottom: 1px dashed var(--main-color);
   height:1px;
+
 }
-#work article .explain .box div{
-    border: 1px dashed var(--main-color);
-    border-radius: 50%;
+#work article .explain .box  div{
+
     box-sizing: border-box;
     min-height:170px;
     width: 170px;
     text-align: center;
-    position: absolute;
+
 }
-#work article .explain .box .first{
-    left:20%;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
-#work article .explain .box .secound{
-    left:80%;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
-#work article .explain .box .thered{
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
-#work article .explain .text{
-    min-height:100px;
-    width:100%;
-    position: relative;
-}
-#work article .explain .text div{
-  width:30%;
-  text-align:center;
-  margin-top:15px;
-  transform: translate(-50%,-50%);
-  position: absolute;
-  box-sizing: border-box;
-  padding:0.1em 1.1em;
-}
-#work article .explain .text .ft{
-  left:20%;
-  top:50%;
-}
-#work article .explain .text .st{
-  left:50%;
-  top:50%;
-}
-#work article .explain .text .tt{
-  left:80%;
-  top:50%;
 
 
 
-}
-#work article .explain .text div *{
-  margin-top:15px;
-}
-#work article .explain .text div h1{
-    font-weight: 400;
-
-}
 /*FIN   work */
 /*request panel*/
 #request{
@@ -1164,6 +1129,72 @@ footer .footer div:nth-child(1) a {
 
     }
 }
+@media (max-width:480px){
+#header{
+  background-size:cover;
+}
+#header #headermain article div{
+  position: absolute;
+  top:20%;
+  left:20px;
+  width: 40%;
+}
+/***********/
+#intr .box{
+  display: flex;
+  flex-direction: column;
+  height:700px;
+}
+#intr .box .artcle{
+padding-top:0;
+}
+#intr .box > div{
+    width:90%;
+    height:300px;
+    margin: auto;
+}
+#intr .box .img{
+    left:0;
+    top:0;
+      background:red;
+}
+#intr .box .img img{
+  background:red;
+}
+/***************/
+#offers .items{
+  flex-direction: column;
+}
+#offers .items .item{
+  width:100%;
+}
+/************/
+#memeber article .main .items{
+width:300%;
+}
+#memeber article .main label:last-child{display: inline-block;}
+#memeber article .main #for3:checked ~ .items{left:-200%;transition: all 2s;}
+#memeber article .main #for3:checked ~ label[for="for3"]{background:var(--secound-color);}
+/*************/
+#expert{height:200px}
+#plan article{
+    flex-direction: column;
+}
+#plan article .box ,#plan article .box2 {
+      width:100%;
+}
+#plan article .box2{
+    padding:5px;
+}
+#plan article .box2 div{
+        width:50%;
+        margin:5px 20px;
+}
+
+
+}
+
+
 @media (min-width:700px){
   html{font-size:12px;}
   .content{width:98%;}
