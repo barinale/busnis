@@ -536,22 +536,22 @@ margin-top:30px;
 /*FIN plan offer*/
 /*logo*/
 #logos{
-          height: 150px;
+          min-height: 150px;
           margin-top: 15px;
-          overflow: hidden;
 
 }
 #logos .items{
           display:flex;
           justify-content: space-around;
-          margin-top:calc(150px/2);
-          transform: translateY(-50%);
+
 }
 #logos .items .item{
           border: 1px solid black;
           text-align: center;
-          padding:calc(60px/4);
           height:60px;
+          padding:0.5em 2em;
+          min-width:110px;
+          margin: 10px 0;
 }
 #logos .items .item h3{
         margin-top: 10px;
@@ -562,7 +562,7 @@ margin-top:30px;
 /*FIN logo*/
 /*Customs*/
 #costum{
-        height:500px;
+        min-height:500px;
         margin-top: 30px;
 }
 
@@ -593,6 +593,7 @@ margin-top:30px;
         left:50%;
         transform: translate(-50%,-50%);
         overflow: hidden;
+        z-index: 2;
 }
 #costum article .box1 .image .cirle img{
         /*transform: translate(-40%,-20%);*/
@@ -667,7 +668,7 @@ margin: auto;
 /*FIN   Customs*/
 /*Message*/
 #message{
-    height:100px;
+    min-height:100px;
     overflow: auto;
       }
 #message article{
@@ -679,11 +680,9 @@ margin: auto;
       width:80%;
       }
 #message .message1{
-display: flex;
-justify-content: flex-start;
-width:50%;
-
-
+      display: flex;
+      justify-content: flex-start;
+      width:50%;
       }
 #message .message1 .icon{
       text-align: center;
@@ -714,8 +713,7 @@ width:50%;
     padding: 0.2em 1.1em;
 }
 #message .inputm input{
-    outline: 1px solid var(--main-color);
-    border: none;
+    border:  1px solid var(--main-color);
     height:28px;
     width:200px;
     margin: 0px;
@@ -724,7 +722,7 @@ width:50%;
 /*FIN Message*/
 /*promo video*/
 #promovideo{
-  height:350px;
+  min-height:350px;
   overflow: hidden;
 
 }
@@ -738,7 +736,7 @@ width:50%;
 
 }
 #promovideo article .video{
-  width: 1100px;
+  width: 100%;
 
 }
 #promovideo article .video iframe{
@@ -788,7 +786,7 @@ width:50%;
 
 #work article .explain .box{
     width:100%;
-    height:190px;
+    min-height:190px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -1190,6 +1188,38 @@ width:300%;
         width:50%;
         margin:5px 20px;
 }
+/****/
+#logos .items{
+  flex-wrap: wrap;
+}
+/********/
+#message article{
+  flex-direction: column;
+}
+#message .message1 {
+    width:100%;
+    justify-content: center;
+}
+#message .inputm{
+  width:280px;
+}
+/********/
+#promovideo article{
+  flex-direction: column;
+}
+/******/
+#work article .explain .box{
+flex-wrap: wrap;
+
+}
+#work article .explain .box .thered{
+flex:2 0 100%;
+padding: 0 calc(100%/4);
+}
+#work article .explain .box i{
+
+}
+
 
 
 }
