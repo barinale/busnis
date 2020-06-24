@@ -674,7 +674,7 @@ margin: auto;
 #message article{
       display: flex;
       justify-content:space-around;
-
+flex-wrap: wrap;
       margin:25px auto;
       align-items: center;
       width:80%;
@@ -682,6 +682,7 @@ margin: auto;
 #message .message1{
       display: flex;
       justify-content: flex-start;
+
       width:50%;
       }
 #message .message1 .icon{
@@ -801,7 +802,7 @@ margin: auto;
   z-index: 2;
 }
 #work article .explain .box i{
-    font-size: 5rem;
+    font-size: 5em;
     color:white;
     background: #02E2D9;
     border-radius: 50%;
@@ -988,6 +989,7 @@ margin: auto;
     content:"\203A \203A ";
     margin-left:8px;
 }
+#news article .box label[for="fthe"]{display:none}
 #news article .box label{display: inline-block; height:20px;width:20px;background:#A1B5BF;
                             border-radius: 50%;margin-top:15px;}
 #news article .box input[id="ftne"]:checked ~ .items{left:-100%;transition: left 1s;}
@@ -1120,6 +1122,11 @@ footer .footer div:nth-child(1) a {
       width:0px;
     }
     /*****************/
+    #message article  .message1{
+      width:100%;
+      justify-content: center;
+    }
+    #message article .inputm {width:270px;}
     #message article .inputm input{
         width:150px;
     }
@@ -1198,10 +1205,10 @@ width:300%;
 }
 #message .message1 {
     width:100%;
-    justify-content: center;
+
 }
 #message .inputm{
-  width:280px;
+  width:250px;
 }
 /********/
 #promovideo article{
@@ -1210,16 +1217,33 @@ width:300%;
 /******/
 #work article .explain .box{
 flex-wrap: wrap;
-
-}
-#work article .explain .box .thered{
-flex:2 0 100%;
-padding: 0 calc(100%/4);
-}
-#work article .explain .box i{
-
+justify-content: center;
 }
 
+/***********/
+#request article{
+flex-direction: column;
+
+}
+#request article div{
+      width:100%;
+    }
+/**********/
+#news article .box label[for="fthe"]{display:inline-block;}
+#news article .box input[id="fthe"]:checked ~  label[for="fthe"]{background:var(--secound-color);}
+
+#news article  .box .items{
+    width:277%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#news article .box input[id="fthe"]:checked ~ .items{left:-200%;transition: left 1s;}
+/******/
+footer .items{
+flex-direction: column;
+
+}
 
 
 }
