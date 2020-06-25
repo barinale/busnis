@@ -252,8 +252,9 @@ section:nth-child(odd){
     padding:0.5em 1.5em;
     background:white;
     color:var(--secound-color);
-    display: inline-block;
+
 }
+
 /* FIN intr------*/
 /**oofer awesome**/
 #offers{
@@ -712,6 +713,7 @@ flex-wrap: wrap;
     border:none;
     margin: 0;
     padding: 0.2em 1.1em;
+
 }
 #message .inputm input{
     border:  1px solid var(--main-color);
@@ -920,6 +922,7 @@ flex-wrap: wrap;
     font-size:1.2rem;
     text-transform: uppercase;
     margin-top:15px;
+    border-radius: 10px;
 }
 /*FIN request panel*/
 /*news*/
@@ -938,10 +941,18 @@ flex-wrap: wrap;
   position: relative;
     display: flex;
     width:200%;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: left;
     }
+    #news article .box .items > div{
+      display: flex;
+      width:100%;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
 #news article .box .items .item{
+  margin:10px;
     width:200px;
     box-sizing: border-box;
 }
@@ -970,7 +981,8 @@ flex-wrap: wrap;
     text-align: center;
 }
 #news article .box .items .item .text .headerr div:nth-child(1) h3{
-    font-size:0.7em;
+    font-size:0.8em;
+    padding:0.2em 0.2em;
     color:white;
 
 }
@@ -979,6 +991,7 @@ flex-wrap: wrap;
 }
 #news article .box .items .item .text .headerr div:nth-child(2) h2{
     font-size:0.8rem;
+
 }
 #news article .box .items .item .text a{
     margin-top:10px;
@@ -1075,6 +1088,18 @@ footer .footer div:nth-child(1) a {
     margin-left:10px;
 }
 /*FIN footer*/
+@media (max-width:900px){
+  html{font-size:12px;}
+  .content{width:98%;}
+  #costum article .box1 .box11{width:100%;}
+#costum article .box1 .box11 span:nth-child(1){
+width:40%;
+}
+#costum article .box1 .box11 span:nth-child(3){
+  width:40%;
+}
+
+}
 @media (max-width:700px){
   html{font-size:13px;}
   #header{
@@ -1229,16 +1254,7 @@ flex-direction: column;
       width:100%;
     }
 /**********/
-#news article .box label[for="fthe"]{display:inline-block;}
-#news article .box input[id="fthe"]:checked ~  label[for="fthe"]{background:var(--secound-color);}
 
-#news article  .box .items{
-    width:277%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#news article .box input[id="fthe"]:checked ~ .items{left:-200%;transition: left 1s;}
 /******/
 footer .items{
 flex-direction: column;
@@ -1249,11 +1265,7 @@ flex-direction: column;
 }
 
 
-@media (min-width:700px){
-  html{font-size:12px;}
-  .content{width:98%;}
 
-}
 
 @media (min-width:940px){
   html{font-size:14px;}
